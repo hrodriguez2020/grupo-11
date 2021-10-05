@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi primer formulario</h1>
+    <img src="" alt="">
+    <!--Para crear formularios se usar form-->
+    <!--Cuando se usan datos sensibles deben tener metodo post y en caso no el metodo debe ser get-->
+    <form action="" method="post">
+        <!--Para titulo del formulario debo usar FIELDSET y LEGEND-->
+        <fieldset>
+            <legend>Iniciar Sesión</legend>
+            <!--Los inputs tienen tipos: email, number, date,time, color,text,password-->
+            <input name="correo" placeholder="Ingrese un correo" required type="email"/>
+            <br>
+            <br>
+            <input name="password" placeholder="Ingrese un password" required type="password"/>
+            <button type="submit">Iniciar Sesión</button>
+
+        </fieldset>
+    </form>
+    <h1>Formulario de registro</h1>
+    <form>
+        <fieldset>
+            <legend>Ingresa todos tus datos</legend>
+
+            <label for="nombre">Nombre</label>
+            <input  autocomplete="new-password" autofocus id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" value="Linder">
+            <br>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido">
+            <br>
+            <br>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input id="fecha_nacimiento" name="fecha_nacimiento" min="2000-01-01" max="2022-12-01" type="date">
+            <br>
+            <br>
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" placeholder="ingrese su correo" type="email" required>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Ingrese un password" required>
+            <br>
+            <br>
+            <label for="celular">Celular</label>
+            <input id="celular" name="celular" maxlength="9" placeholder="ingrese su celular" type="number">
+            <!--Una lista desplegable se llama select-->
+            <!--Los elementos de este select se llaman options-->
+            <br>
+            <br>
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="" disabled selected>Seleccione un pais</option>
+                <option value="peru">Perú</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+                <option value="ecuador">Ecuador</option>
+            </select>
+            <br>
+            <br>
+            <label for="terminos">
+                <!--cuando un input sea un checkbox o radiobutton se recomienda pornerlo dentro de label-->
+                <input id="terminos" type="checkbox" required> Acepta los términos y condiciones
+            </label>
+            <br>
+            <br>
+            <label for="suscripcion1">
+                <input id="suscripcion1" checked name="suscripcion" type="radio">Suscripcion1
+            </label>
+            <label for="suscripcion2">
+                <input id="suscripcion2" name="suscripcion" type="radio">Suscripcion2
+            </label>
+            <label for="suscripcion3">
+                <input id="suscripcion3" name="suscripcion" type="radio">Suscripcion3
+            </label>
+            <br>
+            <br>
+            <label for="texto"></label>
+            <textarea id="texto" name="texto" placeholder="Ingrese un texto sobre usted" rows="10" cols="50" maxlength="140" minlength="30"></textarea>
+            <br>
+            <br>
+            <button type="submit">Registrarse</button>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
