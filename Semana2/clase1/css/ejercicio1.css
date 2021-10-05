@@ -1,0 +1,28 @@
+h1{
+width: 394px;
+height: 32px;
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 39px;
+color: #2400FF;
+}
+
+ul{
+  list-style: none;
+}
+div.animales{
+
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 416px;
+  height: 218px;
+  left: 30px;
+  top: 519px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
