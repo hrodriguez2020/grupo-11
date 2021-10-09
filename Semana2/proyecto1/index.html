@@ -13,22 +13,18 @@
 
 <body>
   <header>
-    <div clas="encabezado">
-      <div class="logo">
-        <h1>LOGO</h1>
-      </div>
-      <div class="navegacion">
-        <nav>
-          <a class="links" href="">Home</a>
-          <a class="links" href="">Servicios</a>
-          <a class="links" href="">Portafolio</a>
-          <a class="links" href="">Contacto</a>
-        </nav>
-      </div>
-    </div>
+    <h1 class="logo">LOGO</h1>
+    <nav class="barra_nav">
+      <ul>
+        <li><a class="links" href="">Home</a></li>
+        <li><a class="links" href="">Servicios</a></li>
+        <li><a class="links" href="">Portafolio</a></li>
+        <li><a class="links" href="">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <section class="secciones" id="section1" >
+    <section class="secciones" id="section1">
       <h2>HOME</h2>
       <div class="parrafo">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur harum distinctio cum, sunt
@@ -42,7 +38,7 @@
         <img src="./images/Rectangle 4.png" alt="imagen3">
       </div>
     </section>
-    <section class="secciones" id="section2" >
+    <section class="secciones" id="section2">
       <h2>SERVICIOS</h2>
       <div class="parrafo">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur harum distinctio cum, sunt
@@ -68,7 +64,7 @@
         <li id="elemento4">Servicio cuatro</li>
       </ul>
     </section>
-    <section class="secciones" id="section3" >
+    <section class="secciones" id="section3">
       <h2>PORTAFOLIO</h2>
       <div class="parrafo">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur harum distinctio cum, sunt
@@ -104,12 +100,12 @@
       </div>
       <form>
         <div>
-          <input id="nombre" name="nombre" type="text" placeholder="Nombre y apellido">
+          <input class="nombre" name="nombre" type="text" placeholder="Nombre y apellido">
         </div>
         <div>
-          <textarea id="texto" name="texto" placeholder="Detalle" rows="10" cols="50"></textarea>
+          <textarea class="texto" name="texto" placeholder="Detalle" rows="10" cols="50"></textarea>
         </div>
-        <button id="boton" type="submit">Enviar</button>
+        <button class="boton" type="submit">Enviar</button>
       </form>
     </section>
   </main>
